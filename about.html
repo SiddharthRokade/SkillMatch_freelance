@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SkillMatch</title>
+    <meta name="description"
+        content="Learn about SkillMatch - the platform connecting top freelancers with businesses worldwide.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="theme.js"></script>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <svg class="h-8 w-8 text-indigo-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M20.59 12l-3.3-3.3a1 1 0 1 1 1.42-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.42-1.4l3.3-3.3zM3.4 12l3.3 3.3a1 1 0 0 1-1.42 1.4l-4-4a1 1 0 0 1 0-1.4l4-4a1 1 0 0 1 1.42 1.4L3.4 12z" />
+                        </svg>
+                        <span class="ml-2 text-xl font-bold text-gray-900">SkillMatch</span>
+                    </a>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="index.html"
+                            class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</a>
+                        <a href="index.html#find-jobs"
+                            class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Find
+                            Jobs</a>
+                        <a href="find-freelancers.html"
+                            class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Find
+                            Freelancers</a>
+                    </div>
+                </div>
+                <!-- Day/Night Toggle -->
+                <button onclick="toggleTheme()" class="theme-toggle-btn" title="Toggle Day/Night Mode">
+                    <svg class="theme-toggle-sun h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    <svg class="theme-toggle-moon h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        stroke-width="2" style="display:none;">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="bg-indigo-700">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold text-white sm:text-5xl">About SkillMatch</h1>
+                <p class="mt-4 text-xl text-indigo-200 max-w-2xl mx-auto">We're on a mission to connect talented
+                    freelancers with businesses that need their skills — seamlessly, fairly, and fast.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mission -->
+    <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+            <div>
+                <h2 class="text-3xl font-extrabold text-gray-900">Our Mission</h2>
+                <p class="mt-4 text-lg text-gray-500">SkillMatch was built with a simple idea: finding the right
+                    freelancer shouldn't be hard. We use smart matching to connect clients with professionals who have
+                    the exact skills they need.</p>
+                <p class="mt-4 text-lg text-gray-500">Whether you're a startup looking for a developer, an agency
+                    seeking a designer, or a business in need of a content writer — SkillMatch helps you find your
+                    perfect match in minutes, not weeks.</p>
+            </div>
+            <div class="mt-10 lg:mt-0">
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-white rounded-lg shadow-sm p-6 text-center card-hover">
+                        <div class="text-3xl font-extrabold text-indigo-600">5,000+</div>
+                        <div class="mt-2 text-sm text-gray-500">Active Freelancers</div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-sm p-6 text-center card-hover">
+                        <div class="text-3xl font-extrabold text-indigo-600">12,000+</div>
+                        <div class="mt-2 text-sm text-gray-500">Projects Completed</div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-sm p-6 text-center card-hover">
+                        <div class="text-3xl font-extrabold text-indigo-600">98%</div>
+                        <div class="mt-2 text-sm text-gray-500">Client Satisfaction</div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-sm p-6 text-center card-hover">
+                        <div class="text-3xl font-extrabold text-indigo-600">50+</div>
+                        <div class="mt-2 text-sm text-gray-500">Countries Served</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Values -->
+    <div class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-gray-900 text-center">Our Values</h2>
+            <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+                <div class="text-center">
+                    <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 mb-6">
+                        <svg class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-medium text-gray-900">People First</h3>
+                    <p class="mt-3 text-gray-500">We put freelancers and clients at the center of everything we do,
+                        ensuring fair opportunities for all.</p>
+                </div>
+                <div class="text-center">
+                    <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 mb-6">
+                        <svg class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-medium text-gray-900">Trust & Safety</h3>
+                    <p class="mt-3 text-gray-500">Verified profiles, secure payments, and transparent reviews build a
+                        trusted marketplace.</p>
+                </div>
+                <div class="text-center">
+                    <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 mb-6">
+                        <svg class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-medium text-gray-900">Speed & Quality</h3>
+                    <p class="mt-3 text-gray-500">Smart matching and curated talent ensure you find the right person
+                        quickly, without compromising quality.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="bg-indigo-700">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 text-center">
+            <h2 class="text-3xl font-extrabold text-white">Join SkillMatch Today</h2>
+            <p class="mt-4 text-lg text-indigo-200">Start hiring or get hired — it only takes a minute.</p>
+            <div class="mt-8 flex justify-center gap-4">
+                <a href="post-job.html"
+                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50">Post
+                    a Job</a>
+                <a href="find-freelancers.html"
+                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-400">Find
+                    Freelancers</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400">&copy; 2024 SkillMatch. All rights reserved.</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="index.html" class="text-gray-300 hover:text-white">Home</a>
+                <a href="contact.html" class="text-gray-300 hover:text-white">Contact</a>
+                <a href="post-job.html" class="text-gray-300 hover:text-white">Post a Job</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

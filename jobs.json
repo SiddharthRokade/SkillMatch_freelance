@@ -1,0 +1,108 @@
+[
+  {
+    "id": 1,
+    "title": "Full-Stack Web Developer",
+    "company": "TechCorp Inc.",
+    "location": "Remote",
+    "type": "Full-time",
+    "salary": "$50-70/hr",
+    "posted_date": "2 days ago",
+    "description": "Looking for an experienced full-stack developer to build a modern e-commerce platform. Must have experience with React, Node.js, and payment gateway integration.",
+    "tags": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Payment APIs"
+    ],
+    "logo_color": "blue",
+    "logo_text": "TC"
+  },
+  {
+    "id": 2,
+    "title": "UI/UX Designer for Mobile App",
+    "company": "InnoDesign Studio",
+    "location": "Remote",
+    "type": "Project-based",
+    "salary": "$2,500 (Fixed)",
+    "posted_date": "3 days ago",
+    "description": "We need a talented UI/UX designer to redesign our existing mobile app. The focus is on improving user experience, modernizing the interface, and increasing engagement.",
+    "tags": [
+      "Figma",
+      "UI Design",
+      "Mobile App",
+      "User Testing"
+    ],
+    "logo_color": "purple",
+    "logo_text": "ID"
+  },
+  {
+    "id": 3,
+    "title": "Content Writer for Tech Blog",
+    "company": "TechTrends Media",
+    "location": "Remote",
+    "type": "Part-time",
+    "salary": "$25-35/hr",
+    "posted_date": "1 day ago",
+    "description": "We're looking for a tech-savvy content writer to create engaging blog posts about emerging technologies, software development, and industry trends. Must have excellent research skills.",
+    "tags": [
+      "Content Writing",
+      "SEO",
+      "Tech Knowledge"
+    ],
+    "logo_color": "green",
+    "logo_text": "TT"
+  },
+  {
+    "id": 4,
+    "title": "Video Editor for YouTube Channel",
+    "company": "VisualCraft Studios",
+    "location": "Remote",
+    "type": "Part-time",
+    "salary": "$30-45/hr",
+    "posted_date": "4 days ago",
+    "description": "Seeking a creative video editor to produce engaging content for our growing YouTube channel. Experience with motion graphics, sound design, and storytelling is a plus.",
+    "tags": [
+      "Adobe Premiere",
+      "After Effects",
+      "Motion Graphics"
+    ],
+    "logo_color": "red",
+    "logo_text": "VC"
+  },
+  {
+    "id": 5,
+    "title": "Senior Data Scientist",
+    "company": "DataInsights",
+    "location": "New York, NY",
+    "type": "Full-time",
+    "salary": "$120k-150k/yr",
+    "posted_date": "5 days ago",
+    "description": "Join our data science team to build predictive models and analyze large datasets. Proficiency in Python, SQL, and machine learning libraries is required.",
+    "tags": [
+      "Python",
+      "Machine Learning",
+      "SQL",
+      "Big Data"
+    ],
+    "logo_color": "yellow",
+    "logo_text": "DI"
+  },
+  {
+    "id": 6,
+    "title": "DevOps Engineer",
+    "company": "CloudSystems",
+    "location": "San Francisco, CA",
+    "type": "Contract",
+    "salary": "$80-100/hr",
+    "posted_date": "1 week ago",
+    "description": "We need a DevOps engineer to optimize our CI/CD pipelines and manage cloud infrastructure on AWS. Strong knowledge of Docker and Kubernetes is essential.",
+    "tags": [
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "CI/CD"
+    ],
+    "logo_color": "indigo",
+    "logo_text": "CS"
+  }
+]

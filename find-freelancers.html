@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Freelancers - SkillMatch</title>
+    <meta name="description"
+        content="Browse top freelancers on SkillMatch. Find developers, designers, writers and more.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="theme.js"></script>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <svg class="h-8 w-8 text-indigo-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M20.59 12l-3.3-3.3a1 1 0 1 1 1.42-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.42-1.4l3.3-3.3zM3.4 12l3.3 3.3a1 1 0 0 1-1.42 1.4l-4-4a1 1 0 0 1 0-1.4l4-4a1 1 0 0 1 1.42 1.4L3.4 12z" />
+                        </svg>
+                        <span class="ml-2 text-xl font-bold text-gray-900">SkillMatch</span>
+                    </a>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="index.html"
+                            class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</a>
+                        <a href="index.html#find-jobs"
+                            class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Find
+                            Jobs</a>
+                        <a href="find-freelancers.html"
+                            class="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Find
+                            Freelancers</a>
+                    </div>
+                </div>
+                <!-- Day/Night Toggle -->
+                <button onclick="toggleTheme()" class="theme-toggle-btn" title="Toggle Day/Night Mode">
+                    <svg class="theme-toggle-sun h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    <svg class="theme-toggle-moon h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        stroke-width="2" style="display:none;">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header + Search -->
+    <div class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-extrabold text-gray-900">Find Freelancers</h1>
+            <p class="mt-2 text-gray-500">Browse our talented community and find the perfect match for your project.</p>
+            <div class="mt-6 max-w-lg">
+                <div class="flex gap-3">
+                    <input type="text" id="freelancer-search" placeholder="Search by skill or name..."
+                        class="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <button id="freelancer-search-btn"
+                        class="px-5 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 text-sm font-medium">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Freelancer Grid -->
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div id="freelancer-grid" class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Skeleton loading state -->
+            <div class="skeleton-card animate-fade-in" id="skeleton-1">
+                <div class="flex flex-col items-center">
+                    <div class="skeleton skeleton-circle h-20 w-20 mb-4"></div>
+                    <div class="skeleton skeleton-text w-32 mx-auto"></div>
+                    <div class="skeleton skeleton-text short w-24 mx-auto mt-2"></div>
+                </div>
+            </div>
+            <div class="skeleton-card animate-fade-in animate-delay-200" id="skeleton-2">
+                <div class="flex flex-col items-center">
+                    <div class="skeleton skeleton-circle h-20 w-20 mb-4"></div>
+                    <div class="skeleton skeleton-text w-32 mx-auto"></div>
+                    <div class="skeleton skeleton-text short w-24 mx-auto mt-2"></div>
+                </div>
+            </div>
+            <div class="skeleton-card animate-fade-in animate-delay-400" id="skeleton-3">
+                <div class="flex flex-col items-center">
+                    <div class="skeleton skeleton-circle h-20 w-20 mb-4"></div>
+                    <div class="skeleton skeleton-text w-32 mx-auto"></div>
+                    <div class="skeleton skeleton-text short w-24 mx-auto mt-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400">&copy; 2024 SkillMatch. All rights reserved.</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="index.html" class="text-gray-300 hover:text-white">Home</a>
+                <a href="about.html" class="text-gray-300 hover:text-white">About</a>
+                <a href="contact.html" class="text-gray-300 hover:text-white">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const colorMap = {
+            indigo: 'bg-indigo-100 text-indigo-800',
+            green: 'bg-green-100 text-green-800',
+            blue: 'bg-blue-100 text-blue-800',
+            purple: 'bg-purple-100 text-purple-800',
+            yellow: 'bg-yellow-100 text-yellow-800',
+            red: 'bg-red-100 text-red-800',
+            gray: 'bg-gray-100 text-gray-800'
+        };
+
+        function createFreelancerCard(f) {
+            const colorClass = colorMap[f.color] || colorMap.gray;
+            const initials = f.name.split(' ').map(n => n[0]).join('');
+            const starsHtml = Array(5).fill(0).map((_, i) =>
+                `<svg class="${i < Math.round(f.rating) ? 'text-yellow-400' : 'text-gray-300'} h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>`
+            ).join('');
+            const skillsHtml = f.skills.slice(0, 3).map(s =>
+                `<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${colorClass}">${s}</span>`
+            ).join('');
+
+            return `
+                <div class="freelancer-card bg-white shadow-sm rounded-lg overflow-hidden border border-gray-200 transition-all duration-300 card-hover" data-name="${f.name.toLowerCase()}" data-skills="${f.skills.join(' ').toLowerCase()}">
+                    <div class="p-6">
+                        <div class="flex flex-col items-center">
+                            <div class="h-20 w-20 rounded-full ${colorClass} flex items-center justify-center mb-4">
+                                <span class="text-2xl font-medium">${initials}</span>
+                            </div>
+                            <h3 class="text-lg font-medium text-gray-900 text-center">${f.name}</h3>
+                            <p class="text-indigo-600 font-medium">${f.role}</p>
+                            <div class="mt-2 flex items-center">
+                                ${starsHtml}
+                                <span class="ml-2 text-sm text-gray-500">(${f.reviews} reviews)</span>
+                            </div>
+                            <p class="mt-2 text-sm text-gray-500">${f.hourly_rate} · ${f.projects_completed} projects</p>
+                        </div>
+                        <div class="mt-4">
+                            <div class="flex flex-wrap gap-2 justify-center">${skillsHtml}</div>
+                        </div>
+                    </div>
+                    <div class="border-t border-gray-200 bg-gray-50 px-6 py-3 flex justify-between items-center">
+                        <a href="freelancer-profile.html?id=${f.id}" class="text-indigo-600 hover:text-indigo-500 font-medium">View Profile</a>
+                        <a href="contact.html?subject=${encodeURIComponent('Hiring Inquiry for: ' + f.name)}" class="inline-flex items-center px-3 py-1 border border-transparent text-xs font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700">Hire</a>
+                    </div>
+                </div>
+            `;
+        }
+
+        async function loadFreelancers() {
+            const grid = document.getElementById('freelancer-grid');
+            try {
+                const res = await fetch('/api/freelancers');
+                if (!res.ok) throw new Error('Failed to fetch');
+                const freelancers = await res.json();
+                grid.innerHTML = '';
+                if (freelancers.length === 0) {
+                    grid.innerHTML = '<p class="text-center text-gray-500 col-span-full">No freelancers found.</p>';
+                    return;
+                }
+                freelancers.forEach((f, index) => {
+                    const delay = index * 0.2;
+                    grid.innerHTML += `<div class="animate-slide-up" style="animation-delay: ${delay}s; opacity: 0;">${createFreelancerCard(f)}</div>`;
+                });
+            } catch (err) {
+                console.error(err);
+                grid.innerHTML = '<p class="text-center text-red-500 col-span-full">Error loading freelancers. Please try again later.</p>';
+            }
+        }
+
+        // Search
+        const searchInput = document.getElementById('freelancer-search');
+        const searchBtn = document.getElementById('freelancer-search-btn');
+
+        function filterFreelancers() {
+            const term = searchInput.value.toLowerCase();
+            const cards = document.querySelectorAll('.freelancer-card');
+            cards.forEach(card => {
+                const name = card.dataset.name;
+                const skills = card.dataset.skills;
+                card.style.display = (name.includes(term) || skills.includes(term)) ? '' : 'none';
+            });
+        }
+
+        searchBtn.addEventListener('click', filterFreelancers);
+        searchInput.addEventListener('keyup', (e) => { if (e.key === 'Enter') filterFreelancers(); });
+
+        document.addEventListener('DOMContentLoaded', loadFreelancers);
+    </script>
+</body>
+
+</html>

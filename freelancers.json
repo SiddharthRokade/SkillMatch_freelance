@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Alex Smith",
+        "role": "Full-Stack Developer",
+        "rating": 4.9,
+        "reviews": 48,
+        "skills": [
+            "React",
+            "Node.js",
+            "MongoDB",
+            "TypeScript",
+            "GraphQL"
+        ],
+        "bio": "Passionate full-stack developer with 8+ years of experience building scalable web applications. Specialized in React ecosystems and Node.js backends. I love turning complex problems into simple, beautiful solutions.",
+        "hourly_rate": "$65/hr",
+        "projects_completed": 124,
+        "color": "indigo",
+        "location": "San Francisco, CA",
+        "member_since": "2021"
+    },
+    {
+        "id": 2,
+        "name": "Sarah Johnson",
+        "role": "UI/UX Designer",
+        "rating": 4.8,
+        "reviews": 62,
+        "skills": [
+            "Figma",
+            "UI Design",
+            "Prototyping",
+            "Adobe XD",
+            "User Research"
+        ],
+        "bio": "Award-winning UI/UX designer focused on creating intuitive and delightful user experiences. I blend aesthetics with usability to craft designs that users love and businesses thrive on.",
+        "hourly_rate": "$55/hr",
+        "projects_completed": 97,
+        "color": "green",
+        "location": "Austin, TX",
+        "member_since": "2020"
+    },
+    {
+        "id": 3,
+        "name": "Michael Park",
+        "role": "Mobile Developer",
+        "rating": 4.7,
+        "reviews": 41,
+        "skills": [
+            "Flutter",
+            "React Native",
+            "Swift",
+            "Kotlin",
+            "Firebase"
+        ],
+        "bio": "Mobile-first developer specializing in cross-platform apps with Flutter and React Native. I build performant, beautiful mobile experiences that feel native on every platform.",
+        "hourly_rate": "$70/hr",
+        "projects_completed": 83,
+        "color": "blue",
+        "location": "Seattle, WA",
+        "member_since": "2022"
+    },
+    {
+        "id": 4,
+        "name": "Emma Lee",
+        "role": "Content Writer",
+        "rating": 4.9,
+        "reviews": 56,
+        "skills": [
+            "Copywriting",
+            "SEO",
+            "Blogging",
+            "Technical Writing",
+            "Social Media"
+        ],
+        "bio": "Versatile content writer with a knack for making complex topics accessible and engaging. From SEO-optimized blog posts to compelling brand copy, I craft words that convert.",
+        "hourly_rate": "$40/hr",
+        "projects_completed": 210,
+        "color": "purple",
+        "location": "Remote",
+        "member_since": "2019"
+    },
+    {
+        "id": 5,
+        "name": "David Chen",
+        "role": "Data Scientist",
+        "rating": 4.8,
+        "reviews": 35,
+        "skills": [
+            "Python",
+            "Machine Learning",
+            "TensorFlow",
+            "SQL",
+            "Data Visualization"
+        ],
+        "bio": "Data scientist with a PhD in Computer Science, specializing in machine learning and predictive analytics. I turn raw data into actionable insights that drive business decisions.",
+        "hourly_rate": "$85/hr",
+        "projects_completed": 67,
+        "color": "yellow",
+        "location": "New York, NY",
+        "member_since": "2021"
+    },
+    {
+        "id": 6,
+        "name": "Priya Sharma",
+        "role": "DevOps Engineer",
+        "rating": 4.7,
+        "reviews": 29,
+        "skills": [
+            "AWS",
+            "Docker",
+            "Kubernetes",
+            "Terraform",
+            "CI/CD"
+        ],
+        "bio": "DevOps specialist with deep expertise in cloud infrastructure and automation. I help teams ship faster with robust CI/CD pipelines and scalable cloud architectures.",
+        "hourly_rate": "$90/hr",
+        "projects_completed": 52,
+        "color": "red",
+        "location": "Remote",
+        "member_since": "2020"
+    }
+]

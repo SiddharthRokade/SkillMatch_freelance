@@ -1,0 +1,13 @@
+{
+    "name": "skillmatch-freelance",
+    "version": "1.0.0",
+    "description": "SkillMatch Freelance Platform",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "verify": "node verify_all.js"
+    },
+    "dependencies": {
+        "express": "^4.21.2"
+    }
+}
